@@ -86,7 +86,7 @@ This project implements a Wi-Fi deauthentication tool using the ESP32 microcontr
 
 ## Credits
 
-This project was not the first one, there were other that came before this. I did this version because i saw few Deauthers made with ESP-IDF so i wanted to give it a shot. Special thanks to [stblr](https://github.com/JulianStiebler) who has helped me figure out how to bypass the sanity check function that was blocking the deauth frame. These are the other Deauther projects that inspired this so go and check them out.
+This project was not the first one, there were other that came before this. I did this version because i saw few Deauthers made with ESP-IDF so i wanted to give it a shot. Special thanks to [stblr](https://github.com/JulianStiebler) who has helped me figure out how to bypass the sanity check function that was blocking the deauth frame. These are the other Deauther projects that inspired this so go and check them out:
 
 - [ESP32-Deauther](https://github.com/tesa-klebeband/ESP32-Deauther) by tesa-klebeband
 
