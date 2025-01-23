@@ -18,7 +18,7 @@ This project implements a Wi-Fi deauthentication tool using the ESP32 microcontr
 
 ## Software Requirements
 
-- [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp-idf-get-started/) (Espressif IoT Development Framework).
+- [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html) (Espressif IoT Development Framework).
 - A terminal or IDE for programming (e.g., Visual Studio Code with the ESP-IDF plugin).
 
 ## Setup and Installation
@@ -30,7 +30,7 @@ This project implements a Wi-Fi deauthentication tool using the ESP32 microcontr
    ```
 
 2. **Set Up ESP-IDF**:
-   Follow the [ESP-IDF installation guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp-idf-get-started/) for your operating system.
+   Follow the [ESP-IDF installation guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html#installation) for your operating system.
 
 3. **Configure the Project**:
    ```bash
@@ -50,7 +50,7 @@ This project implements a Wi-Fi deauthentication tool using the ESP32 microcontr
 6. **Connect to the ESP32 Wi-Fi Network**:
    - Default SSID: `ESP32Deauther`
    - Default Password: `password123`
-   - If you want change the SSID and Password you can do that in `main/include/config.h`
+   - If you want to change the SSID and Password you can do that in `main/include/config.h`
 
 7. **Access the Web Interface**:
    - Open a browser and navigate to `http://192.168.4.1/`.
