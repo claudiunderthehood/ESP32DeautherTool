@@ -41,7 +41,7 @@ static const wifi_promiscuous_filter_t g_filter_config = {
  * @brief Start the deauth process
  *
  * @param wifi_number  Index of the targeted network (if single-target)
- * @param attack_type  DEAUTH_TYPE_SINGLE or DEAUTH_TYPE_ALL
+ * @param attack_type  DEAUTH_SINGLE or DEAUTH_ALL
  * @param reason       802.11 reason code to use (0..65535)
  */
 void start_attack(int wifi_number, int attack_type, uint16_t reason);
