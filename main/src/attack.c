@@ -67,16 +67,6 @@ static void disconnect_all_stations(void) {
     else ESP_LOGE(TAG, "esp_wifi_deauth_sta(0) failed: %s", esp_err_to_name(err));
 }
 
-/**
- * @brief Start the Attack
- *  - If DEAUTH_SINGLE, set AP channel to target
- *  - If DEAUTH_ALL, kill AP (switch to STA)
- *  - Then create 'deauth_task' for continuous sending
- * 
- * @param wifi_number Index of the targeted network.
- * @param attack_type DEAUTH_SINGLE or DEAUTH_ALL.
- * @param reason 802.11 reason code to use.
- */
 void start_attack(int wifi_number, int attack_type, uint16_t reason) {
     if(s_deauth_task_handle) {
         vTaskDelete(s_deauth_task_handle);
@@ -136,9 +126,6 @@ void start_attack(int wifi_number, int attack_type, uint16_t reason) {
     );
 }
 
-/**
- * @brief Stop the Attack by deleting the deauth_task.
- */
 void stop_attack(void) {
     ESP_LOGI(TAG, "Stopping Attack..");
     if(s_deauth_task_handle) {

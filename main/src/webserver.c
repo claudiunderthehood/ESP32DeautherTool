@@ -299,9 +299,6 @@ static esp_err_t handle_stop(httpd_req_t *req) {
     return ESP_OK;
 }
 
-/**
- * @brief Starts the web server.
- */
 void start_webserver(void) {
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     config.server_port = 80;
@@ -355,9 +352,6 @@ void start_webserver(void) {
     }
 }
 
-/**
- * @brief Stops the web server.
- */
 void stop_webserver(void) {
     if(g_http_server) {
         httpd_stop(g_http_server);
